@@ -15,6 +15,9 @@ maps the add-on options below to the environment variables the app expects.
 
 [![Add Repository](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2FTestStudent156%2FUsenetStreamerAddon)
 
+Or import ropository manually Settings → Add-ons → Add-on Store → 3 dots top right → repositories → Add repository → https://github.com/TestStudent156/UsenetStreamerAddon
+then install
+
 ## Installation (local add-on, for development/verification)
 
 1. Copy this `UsenetStreamerAddon` folder into the host's `addons` share (e.g. via the
