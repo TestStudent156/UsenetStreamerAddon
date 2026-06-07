@@ -1,19 +1,24 @@
 # UsenetStreamer add-on
 
 Runs [UsenetStreamer](https://github.com/Sanket9225/UsenetStreamer) (a Usenet →
-Stremio bridge) as a Home Assistant add-on. The companion
+Stremio bridge) as a Home Assistant add-on. 
+
+The companion
 [UsenetStreamer integration](https://github.com/TestStudent156/hass-usenetstreamer)
-installs, starts, and monitors this add-on for you — you normally don't add it by
-hand.
+monitors this add-on for you if you want — you normally don't add it by hand.
 
 It is a **thin wrapper** around the upstream image
 `ghcr.io/sanket9225/usenetstreamer` (pinned to a release tag); a small `run.sh`
 maps the add-on options below to the environment variables the app expects.
 
+## Import Custom Repo to Homeassistant Addons
+
+[![Add Repository](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2FTestStudent156%2FUsenetStreamerAddon)
+
 ## Installation (local add-on, for development/verification)
 
-1. Copy this `usenetstreamer/` folder into the host's `addons` share (e.g. via the
-   Samba or Advanced SSH add-on) so it lives at `/addons/usenetstreamer/`.
+1. Copy this `UsenetStreamerAddon` folder into the host's `addons` share (e.g. via the
+   Samba or Advanced SSH add-on) so it lives at `/addons/UsenetStreamerAddon/`.
 2. Settings → Add-ons → Add-on Store → ⋮ → **Check for updates**. The add-on
    appears under **Local add-ons** as `local_usenetstreamer`.
 3. Install it, set **Admin shared secret** in the Configuration tab, then Start.
