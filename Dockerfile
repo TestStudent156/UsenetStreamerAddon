@@ -2,7 +2,7 @@
 # We build FROM the upstream image so a small run script can translate add-on
 # options (/data/options.json) into the environment variables UsenetStreamer
 # expects (ADDON_SHARED_SECRET, etc.). A bare `image:` reference can't inject env.
-FROM ghcr.io/sanket9225/usenetstreamer:1.7.12
+FROM ghcr.io/sanket9225/usenetstreamer:latest
 
 # jq parses /data/options.json in run.sh; the upstream image is alpine-based.
 RUN apk add --no-cache jq
